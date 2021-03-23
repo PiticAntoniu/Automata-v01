@@ -16,5 +16,19 @@ namespace Automata_v01
         {
             InitializeComponent();
         }
+
+        private void MockDataButton_Click(object sender, EventArgs e)
+        {
+            Automata a = new Automata();
+
+            a.MockData();
+            AutomataUtils.SaveToJson(Constants.defaultAutomata,a);
+
+        }
+
+        private void LoadAutomataButton_Click(object sender, EventArgs e)
+        {
+            Automata a = AutomataUtils.LoadFromJson(Constants.defaultAutomata);
+        }
     }
 }
