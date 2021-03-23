@@ -50,8 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Automata.cs" />
+    <Compile Include="AutomataConvertor.cs" />
     <Compile Include="AutomataUtils.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>

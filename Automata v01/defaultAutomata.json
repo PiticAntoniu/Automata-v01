@@ -1,1 +1,80 @@
-{"I":["a","b","c"],"S":["q0","q1","q2"],"Sf":["q2"],"F":[{"PerecheDeIntrare":{"Item1":"q0","Item2":"a"},"StareDeIesire":"q0"},{"PerecheDeIntrare":{"Item1":"q0","Item2":"b"},"StareDeIesire":"q1"},{"PerecheDeIntrare":{"Item1":"q0","Item2":"c"},"StareDeIesire":"q1"},{"PerecheDeIntrare":{"Item1":"q1","Item2":"a"},"StareDeIesire":"q1"},{"PerecheDeIntrare":{"Item1":"q1","Item2":"b"},"StareDeIesire":"q1"},{"PerecheDeIntrare":{"Item1":"q1","Item2":"c"},"StareDeIesire":"q2"},{"PerecheDeIntrare":{"Item1":"q2","Item2":"a"},"StareDeIesire":"q2"},{"PerecheDeIntrare":{"Item1":"q2","Item2":"b"},"StareDeIesire":"q2"},{"PerecheDeIntrare":{"Item1":"q2","Item2":"c"},"StareDeIesire":"q2"}]}
+{
+  "I": [
+    "a",
+    "b",
+    "c"
+  ],
+  "S": [
+    "q0",
+    "q1",
+    "q2"
+  ],
+  "Sf": [
+    "q2"
+  ],
+  "F": [
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q0",
+        "Item2": "a"
+      },
+      "StareDeIesire": "q0"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q0",
+        "Item2": "b"
+      },
+      "StareDeIesire": "q1"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q0",
+        "Item2": "c"
+      },
+      "StareDeIesire": "q1"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q1",
+        "Item2": "a"
+      },
+      "StareDeIesire": "q1"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q1",
+        "Item2": "b"
+      },
+      "StareDeIesire": "q1"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q1",
+        "Item2": "c"
+      },
+      "StareDeIesire": "q2"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q2",
+        "Item2": "a"
+      },
+      "StareDeIesire": "q2"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q2",
+        "Item2": "b"
+      },
+      "StareDeIesire": "q2"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "q2",
+        "Item2": "c"
+      },
+      "StareDeIesire": "q2"
+    }
+  ]
+}
