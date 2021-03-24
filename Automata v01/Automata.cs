@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace Automata_v01
@@ -30,6 +31,16 @@ namespace Automata_v01
             }
 
             return s.ToString();
+        }
+
+        internal string Transition(string stareActuala, char c)
+        {
+            return f.Find(x => x.PerecheDeIntrare.stare.Equals(stareActuala) && x.PerecheDeIntrare.input == c).StareDeIesire;
+        }
+
+        internal bool ExistTransition(string stareActuala, char c)
+        {
+            return f.Count(x => x.PerecheDeIntrare.stare.Equals(stareActuala) && x.PerecheDeIntrare.input == c)!=0;
         }
 
         #endregion

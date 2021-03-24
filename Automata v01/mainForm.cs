@@ -35,5 +35,23 @@ namespace Automata_v01
             AutomataProvider.A = AutomataUtils.LoadFromJson(Constants.defaultAutomata);
             automataRichTextBox.Text = AutomataConvertor.GetAutomataAsString(AutomataProvider.A);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void wordTextBox_TextChanged(object sender, EventArgs e)
+        {
+            bool validWord = AutomataUtils.CheckWord(AutomataProvider.A, wordTextBox.Text);
+            if (validWord)
+            {
+                wordTextBox.ForeColor = Constants.ValidWordColor;
+            }
+            else
+            {
+                wordTextBox.ForeColor = Constants.InvalidWordColor;
+            }
+        }
     }
 }

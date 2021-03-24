@@ -19,5 +19,18 @@ namespace Automata_v01
         {
             return JsonConvert.DeserializeObject<Automata>(File.ReadAllText(fileName));
         }
+
+        internal static bool CheckWord(Automata a, string word)
+        {
+            // q0, abcbc
+            string stareActuala = a.S[0]; // q0
+
+            while (word != "" && a.ExistTransition(stareActuala, word[0]) ){
+                stareActuala = a.Transition(stareActuala, word[0]);
+                word = word.Remove(0, 1);
+            }
+
+            return word=="" && a.Sf.Contains(stareActuala);
+        }
     }
 }
