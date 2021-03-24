@@ -26,14 +26,14 @@ namespace Automata_v01
 
         private void LoadAutomataButton_Click(object sender, EventArgs e)
         {
-            Automata a = AutomataUtils.LoadFromJson(Constants.defaultAutomata);
-            automataRichTextBox.Text = AutomataConvertor.GetAutomataAsString(a);
+            AutomataProvider.A = AutomataUtils.LoadFromJson(Constants.defaultAutomata);
+            automataRichTextBox.Text = AutomataConvertor.GetAutomataAsString(AutomataProvider.A);
         }
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-            Automata a = AutomataUtils.LoadFromJson(Constants.defaultAutomata);
-            automataRichTextBox.Text = AutomataConvertor.GetAutomataAsString(a);
+            AutomataProvider.A = AutomataUtils.LoadFromJson(Constants.defaultAutomata);
+            automataRichTextBox.Text = AutomataConvertor.GetAutomataAsString(AutomataProvider.A);
         }
     }
 }
