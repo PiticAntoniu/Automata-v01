@@ -38,7 +38,7 @@ namespace Automata_v01
         private void wordTextBox_TextChanged(object sender, EventArgs e)
         {
             bool validWord = AutomataUtils.CheckWord(AutomataProvider.A, wordTextBox.Text);
-            if (validWord)
+            if (validWord) 
             {
                 wordTextBox.ForeColor = Constants.ValidWordColor;
             }
