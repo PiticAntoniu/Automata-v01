@@ -10,6 +10,6 @@ namespace Automata_v01
     {
         static Automata a = null;
 
-        public static Automata A { get => a == null ? a = new Automata() : a; set => a = value; }
+        public static Automata A { get  { if (a == null) return a = new Automata(); else return a; } set => a = value; }
     }
 }

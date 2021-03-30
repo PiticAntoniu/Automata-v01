@@ -10,10 +10,10 @@ namespace Automata_v01
     public class Automata
     {
         #region data
-        List<char> i = new List<char>();
-        List<string> s = new List<string>();
-        List<string> sf = new List<string>();
-        List<Tranzitie> f = new List<Tranzitie>();
+        List<char> i = new List<char>(); // {a,b,c}
+        List<string> s = new List<string>(); // {q0,q1,q2}
+        List<string> sf = new List<string>(); // {q2}
+        List<Tranzitie> f = new List<Tranzitie>(); // f(q1,b) -> q2
 
         public List<char> I { get => i; set => i = value; }
         public List<string> S { get => s; set => s = value; }
@@ -44,6 +44,8 @@ namespace Automata_v01
         }
 
         #endregion
+
+
 
     }
 }

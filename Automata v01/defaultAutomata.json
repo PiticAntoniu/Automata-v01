@@ -7,22 +7,19 @@
   "S": [
     "q0",
     "q1",
-    "q2"
+    "qa",
+    "qb",
+    "qa2",
+    "qb2",
+    "qc"
   ],
   "Sf": [
-    "q2"
+    "qc"
   ],
   "F": [
     {
       "PerecheDeIntrare": {
         "Item1": "q0",
-        "Item2": "a"
-      },
-      "StareDeIesire": "q0"
-    },
-    {
-      "PerecheDeIntrare": {
-        "Item1": "q0",
         "Item2": "b"
       },
       "StareDeIesire": "q1"
@@ -30,51 +27,51 @@
     {
       "PerecheDeIntrare": {
         "Item1": "q0",
-        "Item2": "c"
-      },
-      "StareDeIesire": "q1"
-    },
-    {
-      "PerecheDeIntrare": {
-        "Item1": "q1",
         "Item2": "a"
       },
-      "StareDeIesire": "q1"
+      "StareDeIesire": "qa"
     },
     {
       "PerecheDeIntrare": {
-        "Item1": "q1",
+        "Item1": "qa",
         "Item2": "b"
       },
-      "StareDeIesire": "q1"
+      "StareDeIesire": "qb"
     },
     {
       "PerecheDeIntrare": {
-        "Item1": "q1",
-        "Item2": "c"
-      },
-      "StareDeIesire": "q2"
-    },
-    {
-      "PerecheDeIntrare": {
-        "Item1": "q2",
+        "Item1": "qb",
         "Item2": "a"
       },
-      "StareDeIesire": "q2"
+      "StareDeIesire": "qa2"
     },
     {
       "PerecheDeIntrare": {
-        "Item1": "q2",
+        "Item1": "qa2",
         "Item2": "b"
       },
-      "StareDeIesire": "q2"
+      "StareDeIesire": "qb2"
     },
     {
       "PerecheDeIntrare": {
-        "Item1": "q2",
+        "Item1": "qb2",
         "Item2": "c"
       },
-      "StareDeIesire": "q2"
+      "StareDeIesire": "qc"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "qc",
+        "Item2": "c"
+      },
+      "StareDeIesire": "qc"
+    },
+    {
+      "PerecheDeIntrare": {
+        "Item1": "qc",
+        "Item2": "a"
+      },
+      "StareDeIesire": "qa"
     }
   ]
 }

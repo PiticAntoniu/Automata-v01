@@ -28,15 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.LoadAutomataButton = new System.Windows.Forms.Button();
             this.automataRichTextBox = new System.Windows.Forms.RichTextBox();
             this.wordTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.StepByStepRichTextBox = new System.Windows.Forms.RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LoadAutomataButton
             // 
-            this.LoadAutomataButton.Location = new System.Drawing.Point(26, 519);
+            this.LoadAutomataButton.Location = new System.Drawing.Point(26, 106);
             this.LoadAutomataButton.Name = "LoadAutomataButton";
             this.LoadAutomataButton.Size = new System.Drawing.Size(260, 51);
             this.LoadAutomataButton.TabIndex = 1;
@@ -62,28 +67,59 @@
             this.wordTextBox.Text = "abcbc";
             this.wordTextBox.TextChanged += new System.EventHandler(this.wordTextBox_TextChanged);
             // 
-            // button1
+            // pictureBox1
             // 
-            this.button1.Location = new System.Drawing.Point(436, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 44);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(735, 83);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(815, 487);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(735, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(852, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "label2";
+            // 
+            // StepByStepRichTextBox
+            // 
+            this.StepByStepRichTextBox.Location = new System.Drawing.Point(26, 548);
+            this.StepByStepRichTextBox.Name = "StepByStepRichTextBox";
+            this.StepByStepRichTextBox.Size = new System.Drawing.Size(649, 528);
+            this.StepByStepRichTextBox.TabIndex = 7;
+            this.StepByStepRichTextBox.Text = "";
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1142, 603);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1588, 1110);
+            this.Controls.Add(this.StepByStepRichTextBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.wordTextBox);
             this.Controls.Add(this.automataRichTextBox);
             this.Controls.Add(this.LoadAutomataButton);
             this.Name = "mainForm";
             this.Text = "Vizualizare automat";
             this.Load += new System.EventHandler(this.mainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,7 +129,10 @@
         private System.Windows.Forms.Button LoadAutomataButton;
         private System.Windows.Forms.RichTextBox automataRichTextBox;
         private System.Windows.Forms.TextBox wordTextBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RichTextBox StepByStepRichTextBox;
     }
 }
 

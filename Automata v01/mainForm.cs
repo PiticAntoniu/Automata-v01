@@ -20,7 +20,7 @@ namespace Automata_v01
         private void MockDataButton_Click(object sender, EventArgs e)
         {
             Automata a = new Automata();
-            AutomataUtils.SaveToJson(Constants.defaultAutomata,a);
+            AutomataUtils.SaveToJson(Constants.defaultAutomata, a);
 
         }
 
@@ -35,12 +35,6 @@ namespace Automata_v01
             AutomataProvider.A = AutomataUtils.LoadFromJson(Constants.defaultAutomata);
             automataRichTextBox.Text = AutomataConvertor.GetAutomataAsString(AutomataProvider.A);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void wordTextBox_TextChanged(object sender, EventArgs e)
         {
             bool validWord = AutomataUtils.CheckWord(AutomataProvider.A, wordTextBox.Text);
@@ -52,6 +46,13 @@ namespace Automata_v01
             {
                 wordTextBox.ForeColor = Constants.InvalidWordColor;
             }
+            StepByStepRichTextBox.Text = AutomataUtils.stepByStepTranzitions;
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.Text = e.X.ToString();
+            label2.Text = e.Y.ToString();
         }
     }
 }
